@@ -110,8 +110,8 @@
      mkdir -pv $validebagos/var/{cache,local,log,mail,opt,spool}
      mkdir -pv $validebagos/var/lib/{color,misc,locate}
 
-     ln -sfv $validebagos/run/var/run
-     ln -sfv $validebagos/run/lock /var/lock
+     ln -sfv /run /var/run
+     ln -sfv /run/lock /var/lock
 
      install -dv -m 0750 $validebagos/root
      install -dv -m 1777 $validebagos/tmp /var/tmp
@@ -120,9 +120,9 @@
 9. After that step, now we need to create some symlinks for being able to go into chroot environment. Also do not skip without creating this symlinks or your installation might fail. 
 - **Now create your symlinks with this commands**:
      ```
-     ln -sv /proc/self/mounts /etc/mtab 
+     ln -sv /proc/self/mounts $validebagos/etc/mtab 
 
-     cat > /etc/hosts << EOF
+     cat > $validebagos/etc/hosts << EOF
      127.0.0.1  localhost $(hostname)
      ::1        localhost
      EOF
@@ -165,10 +165,10 @@
 
 
 
-     touch /var/log/{btmp,lastlog,faillog,wtmp}
-     chgrp -v utmp /var/log/lastlog
-     chmod -v 664  /var/log/lastlog
-     chmod -v 600  /var/log/btmp
+     touch $validebagos/var/log/{btmp,lastlog,faillog,wtmp}
+     chgrp -v utmp $validebagos/var/log/lastlog
+     chmod -v 664  $validebagos/var/log/lastlog
+     chmod -v 600  $validebagos/var/log/btmp
      ```
 
 Enter the Chroot environment and compile everything!
@@ -178,7 +178,7 @@ Enter the Chroot environment and compile everything!
 - **Enter the chroot environment with these commands**:
      ```
      chroot "$validebagos" /usr/bin/env -i   \
-         HOME=$validebagos/root                  \
+         HOME=/root                  \
          TERM="$TERM"                \
          PS1='(validebagos chroot) \u:\w\$ ' \
          PATH=/usr/bin:/usr/sbin     \
