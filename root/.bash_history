@@ -69,3 +69,8 @@ rm -Rf gcc-15.2.0
 clear
 neofetch
 exit
+clear
+neofetch
+neofetch
+clear
+exit
