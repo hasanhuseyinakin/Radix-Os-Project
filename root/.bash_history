@@ -74,3 +74,123 @@ neofetch
 neofetch
 clear
 exit
+clear
+neofetch
+ls
+cd /home/tester/
+ls
+cd ..
+ls
+cd ..
+ls
+cd /usr
+ls
+nano
+clear
+nvim
+vim
+neovim
+otistikvim
+clear
+s
+ls
+cd bin
+ls
+find
+find vim
+find 
+ls
+cd ..
+ls
+cd /home/tester/
+ls
+touch
+touch hasaninayaklari.txt
+ls
+ls
+ls
+echo "Hehe" >> hasaninayaklari.txt 
+ls
+cat hasaninayaklari.txt 
+cat hasaninayaklari.txt 
+cat hasaninayaklari.txt 
+cd ..
+cd /usr/local/bin/
+ls
+example
+example
+cat example 
+touch hasa
+cd ../..
+cd ..
+clear
+neofetch
+cd /usr/l
+cd /usr/
+ls
+cd bin/
+ls
+cat neofetch 
+neofetch
+ls
+cmatrix
+ppes.sh
+pipes.sh
+clear
+cd ../..
+cd 
+cd /
+..
+clear
+neofetch
+clear
+neofetch
+cd sources/
+tar -xvf nano-8.7.1.tar.xz 
+cd nano-8.7.1
+clear
+./configure --prefix=/usr
+make
+make install
+clear
+nano xd
+clear
+cd ..
+rm -Rf nano-8.7.1
+clear
+clear
+cat neofetch/
+cd usr
+cd ..
+cd usr/
+clear
+ls
+cd local/
+ls
+cd share/
+ls
+cd ../../..
+clear
+neofetch
+cd home/
+cd tester/
+clear
+ls
+rm -Rf hasaninayaklari.txt 
+clear
+ls -a
+cd ..
+cd ..
+cat neofetch
+cd sources/
+cd neofetch/
+clear
+ls
+ls -a
+cat neofetch
+clear
+neofetch
+neofetch
+clear
+neofetch
+exit
